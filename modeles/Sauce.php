@@ -8,5 +8,4 @@ class sauce extends _model {
     protected $table = "sauce";
 
     // attribut à valoriser
-    protected $fields = ["nom" => "txt", "prix" => "NUM", "image" => "TXT"];
-}
+    protected $fields = ["nom" => "TXT","descritpion"=>"TXT", "prix" => "NUM", "image" => "TXT","etat" => "BOOL"];}

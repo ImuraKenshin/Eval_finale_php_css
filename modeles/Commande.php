@@ -8,7 +8,7 @@ class commande extends _model {
     protected $table = "commande";
 
     // attribut à valoriser
-    protected $fields = ["panier" => "json", "debut" => "TXT", "etat" => "LINK"];
+    protected $fields = ["numero"=>"NUM", "panier" => "json", "debut" => "TXT", "etat" => "LINK"];
 
     // Lien à valoriser
     protected $links =["etat" => "etat"];
