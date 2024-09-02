@@ -5,9 +5,9 @@
 // Paramètres : néant
 
 // liens :
-    // espace admin : afficher_espace_administrateur.php
+    // liste utilisateur : afficher_liste_utilisateur.php
     // liste commande : afficher_liste_commande.php
-    // caisse : afficher_form_commande.php
+    // menu: afficher_form_ajout_menu.php
 
 ?>
 <!DOCTYPE html>

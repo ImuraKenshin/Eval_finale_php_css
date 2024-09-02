@@ -6,6 +6,7 @@
 
 // liens :
     // ajouter un utilisateur : afficher_form_ajout_utilisateur
+    // changer mot de passe : afficher_form_mot_de_passe.php
 
 ?>
 <!DOCTYPE html>

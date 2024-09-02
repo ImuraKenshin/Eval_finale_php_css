@@ -1,12 +1,12 @@
 <?php
 // contrôleur
 
-// Rôle : enregistrer le nouvel utilisateur
+// Rôle : enregistrer un nouveau menu
 
 // Paramètres : $_POST : nom, description, prix
             //  $_Files : image
 
-// templates : liste_utilisateur.php
+// templates : accueil_admin.php
 
 
 // initiation
@@ -38,7 +38,7 @@ $menu->insert();
 
 // affichage final
 if ($utilisateur->getTarget("role")->get("libelle") == "administrateur") {
-    include "templates/pages/liste_utilisateur.php";
+    include "templates/pages/accueil_admin.php";
 }else{
     include "templates/pages/connexion.php";
 }

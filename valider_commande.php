@@ -1,11 +1,11 @@
 <?php
 // contrôleur
 
-// Rôle : afficher le detail d'une commande
+// Rôle : modifier l'état d'une commande
 
 // Paramètres : id de la commande
 
-// templates : detail_commande.php
+// templates : liste_commande.php
 
 
 // initiation
