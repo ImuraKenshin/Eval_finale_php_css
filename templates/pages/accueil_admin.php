@@ -1,0 +1,40 @@
+<?php
+
+// templates de pages complètes : page d'accueil admin
+
+// Paramètres : néant
+
+// liens :
+    // espace admin : afficher_espace_administrateur.php
+    // liste commande : afficher_liste_commande.php
+    // caisse : afficher_form_commande.php
+
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de connexion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="...">
+</head>
+<body>
+
+    <?php
+    include "templates/fragments/header.php";
+    ?>
+
+    <h1>Accueil administrateur</h1>
+
+    <div class="container div_bouton">
+        <a href="afficher_liste_utilisateur.php" title=""><button>Liste utilisateur</button></a>
+        <a href="afficher_liste_commande.php" title=""><button>Liste des commandes</button></a>
+        <a href="afficher_form_ajout_menu.php" title=""><button>Nouveau menu</button></a>
+    </div>
+
+
+    
+
+</body>
+</html>

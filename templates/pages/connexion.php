@@ -23,7 +23,7 @@
     <h1>Connexion</h1>
 
     <form action="ouvrir_session.php" method="POST" novalidate>
-        <label for="pseudo"> Identifiant <br>
+        <label for="nom"> Nom <br>
             <input type="text" name="pseudo" id="pseudo">
         </label>
         <br><br>

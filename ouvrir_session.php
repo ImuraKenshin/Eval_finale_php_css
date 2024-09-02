@@ -8,7 +8,7 @@
 // initialisation
 include "utils/init.php";
 
-$identifiant = $_POST["pseudo"];
+$identifiant = $_POST["nom"];
 $mdp = $_POST["mdp"];
 
 $utilisateur = new utilisateur();
@@ -18,7 +18,7 @@ $listeComptes = $utilisateur->listAll();
 // pour chaque compte de la bdd
 foreach ($listeComptes as $compte){
     // si l'identifiant de $_post correspond au champ pseudo d'un compte
-    if ($compte->get("pseudo") === $identifiant && $compte->get("mdp") === $mdp){
+    if ($compte->get("nom") === $identifiant && password_verify($mdp, $compte->get("mdp")) ){
         //je connecte l'utilisateur à la session
         session_connect($compte->getId());
     }
