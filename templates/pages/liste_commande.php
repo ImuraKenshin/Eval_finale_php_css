@@ -45,7 +45,7 @@
                             <td> <?= htmlentities($commande->get("numero"))  ?> </td>
                             <td> <?= htmlentities($commande->get("debut"))  ?> </td>
                             <td> <?= htmlentities($commande->getTarget("etat")->get("libelle"))  ?> </td>
-                            <td><a href="afficher_detail_commande.php?id=<?=$commande->getId()?>"><button>Détail</button></a></td>
+                            <td><a href="afficher_detail_commande.php?id=<?=$commande->getId()?>" title="detail"><button>Détail</button></a></td>
                         </tr>
                 <?php
                     }}

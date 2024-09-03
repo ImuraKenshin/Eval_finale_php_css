@@ -15,7 +15,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de connexion</title>
+    <title>Page d'accueil administrateur</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="...">
 </head>
@@ -28,9 +28,9 @@
     <h1>Accueil administrateur</h1>
 
     <div class="container div_bouton">
-        <a href="afficher_liste_utilisateur.php" title=""><button>Liste utilisateur</button></a>
-        <a href="afficher_liste_commande.php" title=""><button>Liste des commandes</button></a>
-        <a href="afficher_form_ajout_menu.php" title=""><button>Nouveau menu</button></a>
+        <a href="afficher_liste_utilisateur.php" title="liste utilisateur"><button>Liste utilisateur</button></a>
+        <a href="afficher_liste_commande.php" title="liste des commandes"><button>Liste des commandes</button></a>
+        <a href="afficher_form_ajout_menu.php" title="nouveau menu"><button>Nouveau menu</button></a>
     </div>
 
 

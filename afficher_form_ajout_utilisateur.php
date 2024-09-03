@@ -18,6 +18,10 @@ include "utils/verif_connexion.php";
 // traitement des données
 $utilisateur = new utilisateur(session_idconnected());
 
+$role = new role();
+
+$liste = $role->listAll();
+
 // affichage final
 if ($utilisateur->getTarget("role")->get("libelle") == "administrateur") {
     include "templates/pages/form_ajout_utilisateur.php";

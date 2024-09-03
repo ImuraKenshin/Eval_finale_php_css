@@ -24,7 +24,7 @@
 
     <form action="ouvrir_session.php" method="POST" novalidate>
         <label for="nom"> Nom <br>
-            <input type="text" name="pseudo" id="pseudo">
+            <input type="text" name="nom" id="nom">
         </label>
         <br><br>
         <label for="mdp"> Mot de passe <br>

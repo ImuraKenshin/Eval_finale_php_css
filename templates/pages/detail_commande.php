@@ -34,7 +34,7 @@
     if($utilisateur->getTarget("role")->get("libelle") == "preparateur"){
     ?>
     <div class="valider_commande">
-        <a href="valider_commande.php?id=<?= $commande->getId() ?>" title=""><button>Valider la livraison</button></a>
+        <a href="valider_commande.php?id=<?= $commande->getId() ?>" title="Valider commande"><button>Valider la livraison</button></a>
     </div>
     <?php
     }

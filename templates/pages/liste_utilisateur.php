@@ -14,7 +14,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de connexion</title>
+    <title>Liste des utilisateurs</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="...">
 </head>
@@ -27,7 +27,7 @@
     <h1>Liste des utilisateurs</h1>
 
     <div class="container div_bouton">
-        <a href="afficher_form_ajout_utilisateur.php" title=""><button>Ajouter un utilisateur</button></a>
+        <a href="afficher_form_ajout_utilisateur.php" title="Ajouter un utilisateur"><button>Ajouter un utilisateur</button></a>
     </div>
 
     <div class="table_utilisateur">
@@ -48,7 +48,7 @@
                             <td> <?= htmlentities($utilisateur->get("nom"))  ?> </td>
                             <td> <?= htmlentities($utilisateur->get("prenom"))  ?> </td>
                             <td> <?= htmlentities($utilisateur->getTarget("role")->get("libelle"))  ?> </td>
-                            <td><a href="afficher_form_mot_de_passe.php?id=<?=$utilisateur->getId()?>"><button>Changer le mot de passe</button></a></td>
+                            <td><a href="afficher_form_mot_de_passe.php?id=<?=$utilisateur->getId()?>" title="changer mot de passe"><button>Changer le mot de passe</button></a></td>
                         </tr>
                 <?php
                     }

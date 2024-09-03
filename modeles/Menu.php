@@ -8,4 +8,4 @@ class menu extends _model {
     protected $table = "menu";
 
     // attribut à valoriser
-    protected $fields = ["nom" => "TXT","descritpion"=>"TXT", "prix" => "NUM", "image" => "TXT","etat" => "BOOL"];}
+    protected $fields = ["nom" => "TXT","description"=>"TXT", "prix" => "NUM", "image" => "TXT","etat" => "BOOL"];}

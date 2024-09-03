@@ -405,6 +405,7 @@ class _model {
                 // echo $message;
             }
         }
+        return true;
         
     }
 

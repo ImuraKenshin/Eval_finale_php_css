@@ -19,6 +19,7 @@ include "utils/verif_connexion.php";
 $utilisateur = new utilisateur(session_idconnected());
 
 // affichage final
+
 if ($utilisateur->getTarget("role")->get("libelle") == "administrateur") {
     include "templates/pages/accueil_admin.php";
 }else{

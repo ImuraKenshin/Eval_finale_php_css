@@ -4,8 +4,8 @@
 
 
 // gestion des messages d'erreur
-ini_set("display_errors", 1);       // Aficher les erreurs
-error_reporting(E_ALL);             // Toutes les erreurs
+// ini_set("display_errors", 1);       // Aficher les erreurs
+// error_reporting(E_ALL);             // Toutes les erreurs
 
 
 
@@ -15,7 +15,7 @@ global $bdd;    // Les variables sont dans $GLABALS["bdd"]
 
 
 // new PDO (chaine de connexion, login, mot de passe)
-$bdd = new PDO("mysql:host=localhost;dbname=projets_concert_fdumont;charset=UTF8", "fdumont", "N+o4GPc5j!G");
+$bdd = new PDO("mysql:host=localhost;dbname=projets_exam-back_fdumont;charset=UTF8", "fdumont", "N+o4GPc5j!G");
 // cette commande plante et termine le programme (erreur fatale) en cas d'erreur dans les paramètres
 // pour verifier : print_r($bdd);
 
@@ -29,20 +29,20 @@ $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 */
 
 include "./utils/model.php";
-include "./modeles/Boissons.php";
-include "./modeles/Burgers.php";
-include "./modeles/Categories.php";
-include "./modeles/Commandes.php";
-include "./modeles/Desserts.php";
-include "./modeles/Encas.php";
-include "./modeles/Etats.php";
-include "./modeles/Frites.php";
-include "./modeles/Menus.php";
-include "./modeles/Roles.php";
-include "./modeles/Salades.php";
-include "./modeles/Sauces.php";
-include "./modeles/Utilisateurs.php";
-include "./modeles/Wraps.php";
+include "./modeles/Boisson.php";
+include "./modeles/Burger.php";
+include "./modeles/Categorie.php";
+include "./modeles/Commande.php";
+include "./modeles/Dessert.php";
+include "./modeles/Enca.php";
+include "./modeles/Etat.php";
+include "./modeles/Frite.php";
+include "./modeles/Menu.php";
+include "./modeles/Role.php";
+include "./modeles/Salade.php";
+include "./modeles/Sauce.php";
+include "./modeles/Utilisateur.php";
+include "./modeles/Wrap.php";
 
 
 // Activer le mecanisme de session

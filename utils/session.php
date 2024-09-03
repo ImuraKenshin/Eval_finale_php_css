@@ -31,7 +31,7 @@ function session_activation(){
     if (session_isconnected()){
         //      - charger l'objet
         global $utilisateurConnecte;
-        $utilisateurConnecte = new compte(session_isconnected());
+        $utilisateurConnecte = new utilisateur(session_isconnected());
         //      - vérifier qu'il est actif, encore autorisé , ...
     }
 
@@ -76,7 +76,7 @@ function session_userconnected(){
         return $utilisateurConnecte;
     }
     else{
-        return new compte();
+        return new utilisateur();
     }
 
 }

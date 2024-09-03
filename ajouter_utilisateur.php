@@ -27,10 +27,12 @@ $compte->set("nom", $nom);
 $compte->set("prenom", $prenom);
 $compte->set("role", $role);
 $compte->set("mdp", $mdp);
+$compte->set("etat", true);
 $compte->insert();
 
 // affichage final
 $liste = $compte->listAll();
+
 if ($utilisateur->getTarget("role")->get("libelle") == "administrateur") {
     include "templates/pages/liste_utilisateur.php";
 }else{

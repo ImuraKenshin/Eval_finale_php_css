@@ -18,7 +18,7 @@ $listeComptes = $utilisateur->listAll();
 // pour chaque compte de la bdd
 foreach ($listeComptes as $compte){
     // si l'identifiant de $_post correspond au champ pseudo d'un compte
-    if ($compte->get("nom") === $identifiant && password_verify($mdp, $compte->get("mdp")) ){
+    if ($compte->get("nom") === $identifiant && password_verify($mdp, $compte->get("mdp")) && $compte->get("etat") == true ){
         //je connecte l'utilisateur à la session
         session_connect($compte->getId());
     }

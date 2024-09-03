@@ -18,7 +18,7 @@ $mdp = password_hash($_POST["mdp"], PASSWORD_DEFAULT);
 // traitement des données
 $utilisateur = new utilisateur(session_idconnected());
 
-$compte = new utilisateur();
+$compte = new utilisateur($_GET["id"]);
 
 
 $compte->set("mdp", $mdp);

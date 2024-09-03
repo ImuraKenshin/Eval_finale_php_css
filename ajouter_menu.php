@@ -26,15 +26,19 @@ $utilisateur = new utilisateur(session_idconnected());
 $menu = new menu();
 
 if($menu->envoyer_image($chemin, $nomImage)){
-
+    $menu->set("nom", $nom);
+    $menu->set("description", $description);
+    $menu->set("prix", $prix);
+    $menu->set("image", $nomImage);
+    $menu->set("etat", true);
+    $menu->insert();
+}else{
+    
+    include "templates/pages/form_ajout_menu.php";
+    exit;
 }
 
-$menu->set("nom", $nom);
-$menu->set("description", $descritpion);
-$menu->set("prix", $prix);
-$menu->set("image", $nomImage);
-$menu->set("etat", true);
-$menu->insert();
+
 
 // affichage final
 if ($utilisateur->getTarget("role")->get("libelle") == "administrateur") {
