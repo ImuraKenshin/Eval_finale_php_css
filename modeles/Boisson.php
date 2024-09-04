@@ -9,4 +9,5 @@ class boisson extends _model {
 
     // attribut à valoriser
     protected $fields = ["nom" => "TXT","descritpion"=>"TXT", "prix" => "NUM", "image" => "TXT","etat" => "BOOL"];
+
 }
